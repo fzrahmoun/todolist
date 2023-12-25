@@ -1,38 +1,78 @@
-.App {
+body{
+  background-color: #0b0b0b;
+  color: white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  background-color: #00cdff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+input[type="checkbox"] {
+  appearance: none;
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  border: 2px solid #00cdff; /* Change to your desired color */
+  border-radius: 4px; /* Adjust as needed */
+  outline: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="checkbox" i]:checked {
+  background-color: #00cdff; 
+  border-color: #00cdff; 
+}
+.blocTasks {
+  margin-top: 50px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
+
+}
+.tasks .bgTasks{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.152);
+  border-radius: 10px;
+  padding: 10px;
+}
+.inputAdd{
+  background-color: rgba(255, 255, 255, 0.152);
+  margin: 50px 0;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.152) ;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   color: white;
+  font-size: 17px;
 }
+.btnAdd{
+  height: 27px;
+  border: 1px solid #00cdff ;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit,.delete{
+  width: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.descriptionTask{
+  margin-right: 20px;
+}
+.category{
+  height: 37px;
+  border: 1px solid #00cdff ;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 10px 20px;
 }
