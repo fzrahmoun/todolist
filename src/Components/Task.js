@@ -26,8 +26,11 @@ const Task = ({task}) => {
         {
             !isEditing ?(
                 <div className="bgTasks">
-                    <input type="checkbox" checked={task.isDone} onChange={handleToggle}/>
-                    <span className="descriptionTask">{task.description}</span>
+                    <div className="dFlexCenter">
+                        <input type="checkbox" checked={task.isDone} onChange={handleToggle}/>
+                        <span className="descriptionTask">{task.description}</span>
+                    </div>
+                    
                     <div>
                         <img
                             src="writing.png"  // Replace with the path to your image
@@ -48,8 +51,8 @@ const Task = ({task}) => {
                  </div>
             ):(
                 <form onSubmit={handleSubmit}>
-                    <input type="text" onChange={(e) =>setDescription(e.target.value)}/>
-                    <button>Save</button>
+                    <input type="text" onChange={(e) =>setDescription(e.target.value)} className="inputSave"/>
+                    <button className="btnSave">Save</button>
                 </form>
             )
         }

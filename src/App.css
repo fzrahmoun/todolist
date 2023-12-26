@@ -26,7 +26,7 @@ input[type="checkbox" i]:checked {
 }
 .blocTasks {
   margin-top: 50px;
-  max-width: 500px;
+  max-width: 350px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -36,28 +36,37 @@ input[type="checkbox" i]:checked {
 .tasks .bgTasks{
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.152);
   border-radius: 10px;
   padding: 10px;
 }
-.inputAdd{
+.inputAdd,.inputSave{
   background-color: rgba(255, 255, 255, 0.152);
-  margin: 50px 0;
-  height: 25px;
+  height: 30px;
   border: 1px solid rgba(255, 255, 255, 0.152) ;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   color: white;
   font-size: 17px;
+  padding: 3px 5px 0px;
 }
-.btnAdd{
-  height: 27px;
+.marginTB50{
+  margin: 50px 0;
+
+}
+.active{
+  background-color: transparent;
+  color: white;
+}
+.btnAdd,.btnSave{
+  height: 34px;
   border: 1px solid #00cdff ;
   cursor: pointer;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 10px 10px 10px;
 
 }
 .edit,.delete{
@@ -75,4 +84,12 @@ input[type="checkbox" i]:checked {
   border-radius: 5px;
   margin: 0 10px;
   padding: 10px 20px;
+}
+.dFlexCenter{
+  display: flex;
+  align-items: center;
+}
+.dFlexCenter span{
+  margin-left: 5px;
+  padding-bottom: 3px;
 }

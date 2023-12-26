@@ -15,7 +15,7 @@ const AddTask = ()=>{
     return(
         <div>
              <form onSubmit={handleSubmit}>
-                <input type="text" onChange={(e) => setDescription(e.target.value)} value={description} className="inputAdd"/>
+                <input type="text" onChange={(e) => setDescription(e.target.value)} value={description} className="inputAdd marginTB50" placeholder="Add Task"/>
                 <button type="submit" className="btnAdd">ADD</button>
             </form>
         </div>
